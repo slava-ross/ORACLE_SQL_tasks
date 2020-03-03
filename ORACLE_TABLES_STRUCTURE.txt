@@ -1,0 +1,48 @@
+TABLE customers2
+ Name                                      Null?    Type                        
+ ----------------------------------------- -------- ----------------------------
+ CUST_ID                                            NUMBER                      
+ CUST_FIRST_NAME                           NOT NULL VARCHAR2(20)                
+ CUST_LAST_NAME                            NOT NULL VARCHAR2(40)                
+ CUST_GENDER                                        CHAR(1)                     
+ CUST_YEAR_OF_BIRTH                                 NUMBER(4)                   
+ CUST_MARITAL_STATUS                                VARCHAR2(20)                
+ CUST_STREET_ADDRESS                       NOT NULL VARCHAR2(40)                
+ CUST_POSTAL_CODE                          NOT NULL VARCHAR2(10)                
+ CUST_CITY                                 NOT NULL VARCHAR2(30)                
+ CUST_STATE_PROVINCE                                VARCHAR2(40)                
+ COUNTRY_ID                                NOT NULL CHAR(2)                     
+ CUST_MAIN_PHONE_NUMBER                             VARCHAR2(25)                
+ CUST_INCOME_LEVEL                                  VARCHAR2(30)                
+ CUST_CREDIT_LIMIT                                  NUMBER                      
+ CUST_EMAIL                                         VARCHAR2(30)                
+
+TABLE sales2
+ Name                                      Null?    Type                        
+ ----------------------------------------- -------- ----------------------------
+ PROD_ID                                   NOT NULL NUMBER(6)                   
+ CUST_ID                                   NOT NULL NUMBER                      
+ TIME_ID                                   NOT NULL DATE                        
+ CHANNEL_ID                                NOT NULL CHAR(1)                     
+ PROMO_ID                                  NOT NULL NUMBER(6)                   
+ QUANTITY_SOLD                             NOT NULL NUMBER(3)                   
+ AMOUNT_SOLD                               NOT NULL NUMBER(10,2)       
+
+TABLE products2
+ Name                                      Null?    Type                         
+ --------------------- 	-------------------- -------- ----------------------------
+ PROD_ID                                            NUMBER(6)                   
+ PROD_NAME                                 NOT NULL VARCHAR2(50)                
+ PROD_DESC                                 NOT NULL VARCHAR2(4000)              
+ PROD_SUBCATEGORY                          NOT NULL VARCHAR2(50)                
+ PROD_SUBCAT_DESC                          NOT NULL VARCHAR2(2000)              
+ PROD_CATEGORY                             NOT NULL VARCHAR2(50)                
+ PROD_CAT_DESC                             NOT NULL VARCHAR2(2000)              
+ PROD_WEIGHT_CLASS                                  NUMBER(2)                   
+ PROD_UNIT_OF_MEASURE                               VARCHAR2(20)                
+ PROD_PACK_SIZE                                     VARCHAR2(30)                
+ SUPPLIER_ID                                        NUMBER(6)                   
+ PROD_STATUS                               NOT NULL VARCHAR2(20)                
+ PROD_LIST_PRICE                           NOT NULL NUMBER(8,2)                 
+ PROD_MIN_PRICE                            NOT NULL NUMBER(8,2)          
+
